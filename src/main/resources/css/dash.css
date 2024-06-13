@@ -1,0 +1,25 @@
+/* BarChart */
+.bar-chart {
+  -fx-background-color: #f0f0f0; /* Couleur de fond */
+}
+
+/* Axes */
+.bar-chart .chart-axis {
+  -fx-font-size: 14px;
+  -fx-bar-fill: #4CAF50;
+  -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .3), rgba(136, 180, 78, .5)); /* Couleur des barres */
+  -fx-text-fill: green; /* Couleur du texte */
+}
+
+/* Barres */
+.bar-chart .bar {
+  -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .3), rgba(136, 180, 78, .5)); /* Couleur des barres */
+
+}
+
+
+/* Titre */
+.bar-chart .chart-title {
+  -fx-font-size: 20px; /* Taille de la police */
+  -fx-font-weight: bold; /* Gras */
+}

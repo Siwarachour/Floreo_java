@@ -1,0 +1,103 @@
+#comingSoonLabel {
+    -fx-background-color: white; /* Light green background */
+    -fx-padding: 10px; /* Adjust padding as needed */
+    -fx-alignment: center; /* Center align the Label */
+    -fx-font-weight: bold; /* Bold font weight for emphasis */
+    -fx-font-size: 30px; /* Adjust font size as needed */
+}
+
+.scroll-pane {
+    -fx-background-color: transparent; /* Make the scroll pane background transparent */
+}
+
+.event-card {
+
+ -fx-background-color: #f0fff0; /* Very light green background */
+    -fx-border-color: #dddddd; /* Light border color for the event card */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px; /* Round rectangle border */
+    -fx-padding: 10px; /* Add padding for space between content and border */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 10, 0.0 , 0 , 2 );
+    -fx-background-radius: 10px; /* Round background */
+    -fx-background-insets: 0, 1;
+    -fx-text-fill: #333333; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+     -fx-alignment: center;/* Round rectangle border */
+}
+
+
+
+.root {
+    -fx-background-image: url('file:///C:/Users/Chaima/Desktop/Sprint2JAVA/src/main/resources/imgs/bggg.jpg');
+       -fx-background-repeat: no-repeat;
+       -fx-background-size: cover;
+       -fx-background-position: center;
+       -fx-background-attachment: fixed;
+}
+#titleLabel1 {
+    -fx-background-image: url('file:///C:/Users/Chaima/Desktop/Sprint2JAVA/src/main/resources/imgs/hed.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-text-fill: #017907;
+    -fx-padding: 40px;
+    -fx-alignment: center;
+}
+
+.scroll-pane1 {
+    -fx-background-color: transparent;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust based on your needs */
+}
+
+
+/* styles.css */
+#custom-label {
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    -fx-font-size: 20px; /* Increased font size */
+    -fx-text-fill: #007ACC; /* Vibrant blue text color */
+    -fx-alignment: center;
+}
+
+.label-container {
+    -fx-background-color: #f2f2f2; /* Light gray background */
+    -fx-padding: 20px; /* Increased padding for a more spacious look */
+    -fx-border-color: #CCCCCC; /* Slightly darker border for definition */
+    -fx-border-width: 2px; /* Thicker border */
+    -fx-border-radius: 10px; /* Rounded corners for a softer look */
+}
+.title-label {
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    -fx-font-size: 24px; /* Larger font size for the title */
+    -fx-text-fill: #333333; /* Darker text color for contrast */
+    -fx-font-weight: bold; /* Bold font weight for emphasis */
+    -fx-padding: 10px; /* Padding around the title for spacing */
+}
+/* General style for the cards */
+.event-cardd {
+    -fx-background-color: #f9f9f9; /* Light grey background */
+    -fx-border-color: #e0e0e0; /* Slightly darker border */
+    -fx-border-width: 2px; /* Thicker border */
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-padding: 20px; /* Increased padding for a more spacious look */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0.0, 0, 2); /* Subtle shadow for depth */
+    -fx-background-radius: 8px; /* Rounded corners for the background */
+    -fx-background-insets: 0, 2; /* Background insets for a more pronounced shadow */
+    -fx-text-fill: #333333; /* Dark grey text color */
+    -fx-font-size: 16px; /* Increased font size for better readability */
+    -fx-alignment: center; /* Center alignment */
+}
+
+/* Style for the labels */
+.event-cardd Label {
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    -fx-font-weight: bold; /* Bold font weight for emphasis */
+    -fx-padding: 5px 0; /* Vertical padding for better spacing */
+}
+

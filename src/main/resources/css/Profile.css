@@ -1,0 +1,41 @@
+.hbox-style {
+  -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .12), rgba(136, 180, 78, .7));
+}
+.background-image {
+  -fx-background-image: url("img/logo.png"); /* Chemin de l'image */
+  -fx-background-repeat: no-repeat; /* Ne pas répéter l'image */
+  -fx-background-position: center center; /* Position de l'image au centre */
+}
+
+.hbox-style:hover .text-field {
+  /* Animation pour les éléments de texte */
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1; /* Augmenter l'échelle verticale de 10% */
+}
+ .image:hover {
+  /* Animation pour les éléments de texte */
+  -fx-scale-x: 1.5; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.5; /* Augmenter l'échelle verticale de 10% */
+}
+
+
+.circular-image {
+  -fx-background-color: rgba(136, 180, 78, 0.7);
+  -fx-border-color: rgba(136, 180, 78, 0.7);
+  -fx-border-width: 800;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.9), 10, 0, 0, 0);
+  -fx-shape: "M0 0 H800 V400 H0 Z";
+  -fx-background-radius: 50%; /* Rendre l'image circulaire */
+}
+
+.circular-image:hover {
+  /* Animation pour les éléments de texte */
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1; /* Augmenter l'échelle verticale de 10% */
+}
+.background-pane {
+  -fx-background-color: linear-gradient(to Bottom, rgba(136, 180, 78, .9), rgba(136, 180, 78, .5));
+}
+
+
+

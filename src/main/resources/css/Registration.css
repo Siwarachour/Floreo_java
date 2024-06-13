@@ -1,0 +1,24 @@
+/* Style de l'arrière-plan */
+.background {
+  -fx-background-color: #ffffff; /* Couleur de fond en cas d'échec du chargement de l'image */
+  -fx-background-size: cover; /* Ajustement de la taille de l'image */
+}
+
+/* Style de l'image d'arrière-plan */
+.background-image {
+  -fx-background-image: url("img/logo.png"); /* Chemin de l'image */
+  -fx-background-repeat: no-repeat; /* Ne pas répéter l'image */
+  -fx-background-position: center center; /* Position de l'image au centre */
+}
+
+.vbox-style:hover .text {
+  /* Animation pour les éléments de texte */
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1; /* Augmenter l'échelle verticale de 10% */
+}
+
+.vbox-style:hover .text-field {
+  /* Animation pour les champs de texte */
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1; /* Augmenter l'échelle verticale de 10% */
+}

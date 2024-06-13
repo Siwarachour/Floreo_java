@@ -1,0 +1,43 @@
+.alert {
+  -fx-font-size: 14px;
+}
+
+.dialog-pane {
+  -fx-background-color: #f2f2f2; /* Couleur de fond */
+}
+
+.label {
+  -fx-text-fill: #ff0000; /* Couleur du texte */
+}
+
+.button {
+  -fx-background-color: #412; /* Couleur de fond du bouton */
+  -fx-text-fill: #856; /* Couleur du texte du bouton */
+}
+
+.button:hover {
+  -fx-background-color: #cc0000; /* Couleur de fond du bouton au survol */
+}
+
+.button:pressed {
+  -fx-background-color: red; /* Couleur de fond du bouton lorsqu'il est enfoncé */
+}
+
+/* Animation pour le header */
+.dialog-pane .header-panel .header {
+  -fx-font-size: 20px; /* Taille de police plus grande */
+  -fx-animation: headerAnim 2s infinite alternate; /* Animation */
+}
+
+/* Définition de l'animation */
+@keyframes headerAnim {
+  0% {
+    -fx-font-size: 20px;
+  }
+  50% {
+    -fx-font-size: 24px;
+  }
+  100% {
+    -fx-font-size: 20px;
+  }
+}

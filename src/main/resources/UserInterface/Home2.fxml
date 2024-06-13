@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" stylesheets="@../css/Home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserController.HomeController">
+    <children>
+        <HBox prefHeight="126.0" prefWidth="1100.0" styleClass="hbox-style">
+            <children>
+                <Text fill="#eeecec" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+                    <HBox.margin>
+
+                        <Insets left="360.0" right="20.0" top="80.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="High Tower Text" size="20.0" />
+                    </font>
+                </Text>
+                <Text fill="#eeecec" layoutX="70.0" layoutY="28.0" onMouseClicked="#Eventlicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Events">
+                    <HBox.margin>
+                        <Insets right="20.0" top="80.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="High Tower Text" size="20.0" />
+                    </font>
+                </Text>
+                <Text fill="#eeecec" layoutX="40.0" layoutY="28.0" onMouseClicked="#Produitclicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Products">
+                    <HBox.margin>
+                        <Insets right="20.0" top="80.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="High Tower Text" size="20.0" />
+                    </font>
+                </Text>
+                <Text fill="#eeecec" layoutX="10.0" layoutY="28.0" onMouseClicked="#Reclamationclicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Reclamation">
+                    <HBox.margin>
+                        <Insets right="20.0" top="80.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="High Tower Text" size="20.0" />
+                    </font>
+                </Text>
+                <Text fill="#a18b8b" layoutX="40.0" layoutY="28.0" onMouseClicked="#Dechetclicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Dechet">
+                    <HBox.margin>
+                        <Insets right="20.0" top="80.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="High Tower Text" size="20.0" />
+                    </font>
+                </Text>
+                <Text fill="#eeecec" layoutX="100.0" layoutY="28.0" onMouseClicked="#Donclicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Don">
+                    <HBox.margin>
+                        <Insets right="20.0" top="80.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="High Tower Text" size="20.0" />
+                    </font>
+                </Text>
+            <Text fill="#eeecec" layoutX="974.0" layoutY="109.0" onMouseClicked="#Reponseclicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Reponse">
+               <font>
+                  <Font name="High Tower Text" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="78.0" />
+               </HBox.margin>
+            </Text>
+                <Text fill="#eeecec" layoutX="130.0" layoutY="28.0" onMouseClicked="#Profileclicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+                    <HBox.margin>
+                        <Insets left="30.0" right="10.0" top="80.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="High Tower Text" size="20.0" />
+                    </font>
+                </Text>
+
+
+                <ImageView fitHeight="50.0" fitWidth="31.0" layoutY="-9.0" onMouseClicked="#logout" opacity="0.0" styleClass="circular-image">
+                    <image>
+                        <Image url="@../img/logout.png" />
+                    </image>
+                </ImageView>
+
+            </children>
+        </HBox>
+        <AnchorPane layoutY="126.0" prefHeight="576.0" prefWidth="1100.0">
+            <children>
+                <ImageView fitHeight="586.0" fitWidth="1100.0" layoutY="-9.0" styleClass="circular-image">
+                    <image>
+                        <Image url="@../img/carousel-2.jpg" />
+                    </image>
+                </ImageView>
+                <VBox layoutY="-9.0" prefHeight="586.0" prefWidth="1100.0" styleClass="vbox-style">
+                    <children>
+                        <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To " wrappingWidth="318.8095703125">
+                            <font>
+                                <Font name="Arial Nova Cond Light" size="62.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="300.0" right="20.0" top="170.0" />
+                            </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Floreo">
+                            <font>
+                                <Font name="Arial Nova Cond Light" size="62.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="600.0" top="-75.0" />
+                            </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Organic &amp; Quality Floreo" textAlignment="CENTER" wrappingWidth="598.0">
+                            <font>
+                                <Font name="Baskerville Old Face" size="96.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="250.0" />
+                            </VBox.margin>
+                        </Text>
+                        <Button fx:id="EmailField" opacity="0.0" text="">
+                            <font>
+                                <Font name="Arial" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <ImageView fx:id="imagefield" fitHeight="229.0" fitWidth="227.0" styleClass="circular-image">
+            <image>
+                <Image url="@../img/logo.png" />
+            </image>
+        </ImageView>
+
+
+
+
+    </children>
+</AnchorPane>

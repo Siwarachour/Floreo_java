@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" styleClass="dash__container-card" stylesheets="@/eventback/ListAddEVnt.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.event.ListEvback">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="-2.0" prefHeight="107.0" prefWidth="1431.0" styleClass="nav">
+            <children>
+                <Text fill="#eceeeb" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DemandeCard__title" text="List Of Events">
+                    <font>
+                        <Font name="Bodoni MT Black" size="36.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="100.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+
+        <Button fx:id="btnajouter" layoutX="77.0" layoutY="156.0" mnemonicParsing="false" onAction="#openaddev" prefHeight="37.0" prefWidth="120.0" style="-fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .6), #2f611f); -fx-text-fill: white;" text="Ajouter" textFill="#f8b135">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <ScrollPane hbarPolicy="NEVER" layoutX="77.0" layoutY="199.0" prefHeight="368.0" prefWidth="929.0" styleClass="user_listScrollPane">
+            <content>
+                <ListView fx:id="listEv" layoutX="93.0" layoutY="245.0" prefHeight="367.0" prefWidth="891.0" VBox.vgrow="ALWAYS" />
+            </content>
+        </ScrollPane>
+        <TextField fx:id="searchInput" layoutX="489.0" layoutY="157.0" prefHeight="37.0" prefWidth="226.0" style="-fx-background-radius: 20;" />
+        <Button fx:id="trie1" layoutX="861.0" layoutY="159.0" mnemonicParsing="false" onAction="#triNomA" prefHeight="33.0" prefWidth="111.0" text="Trie ASC" textFill="#fffdf7">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="trie" layoutX="737.0" layoutY="159.0" mnemonicParsing="false" onAction="#triNomD" prefHeight="33.0" prefWidth="120.0" text="Trie DESC" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Button>
+        <Label layoutX="392.0" layoutY="166.0" text="Recherche">
+            <font>
+                <Font name="Bauhaus 93" size="17.0" />
+            </font>
+        </Label>
+          <Button layoutX="225.0" layoutY="164.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#goToRecommendedEvent" prefHeight="29.0" prefWidth="147.0" text="Upcoming Events" textFill="WHITE" />
+    </children>
+</Pane>

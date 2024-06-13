@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.HBox?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@RECstyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.event.REC">
+
+
+
+
+
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" prefHeight="372.0" prefWidth="570.0" spacing="10.0">
+            <!-- Label to display title -->
+            <Label fx:id="comingSoonLabel" prefHeight="70.0" prefWidth="570.0" text="Coming soon" textFill="#017907">
+            <font>
+               <Font name="Bauhaus 93" size="25.0" />
+            </font>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin></Label>
+            <!-- VBox to hold recommended events -->
+            <ScrollPane prefHeight="230.0" prefWidth="567.0" >
+                <HBox fx:id="recommendedEventsHBox" prefHeight="228.0" prefWidth="567.0" spacing="5.0">
+                    <!-- Recommended events will be added dynamically here -->
+                </HBox>
+            </ScrollPane>
+        </VBox>
+    </children>
+</AnchorPane>

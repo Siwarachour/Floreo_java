@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.TableView?>
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" styleClass="dash__container-card" stylesheets="@../css/listUser.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserController.listUserController">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="-3.0" prefHeight="108.0" prefWidth="1159.0" styleClass="nav">
+            <children>
+                <Text fill="#eceeeb" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DemandeCard__title" text="List Of Users">
+                    <font>
+                        <Font name="Century Schoolbook" size="33.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="100.0" />
+                    </HBox.margin></Text>
+                <ImageView fitHeight="62.0" fitWidth="72.0" onMouseClicked="#AddUserClicked" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/ajout.png" />
+                    </image>
+               <HBox.margin>
+                  <Insets left="650.0" />
+               </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+
+        <ScrollPane hbarPolicy="NEVER" layoutX="33.0" layoutY="167.0" prefHeight="531.0" prefWidth="1053.0" styleClass="user_listScrollPane">
+            <content>
+                <VBox fx:id="userListContainer" prefHeight="446.0" prefWidth="1005.0" spacing="13.0" styleClass="userTableBody">
+                    <children>
+                        <ListView fx:id="userListListView" prefHeight="446.0" prefWidth="1066.0" />
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+
+          <Text fill="#2f611f" layoutX="36.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sort-text" text="Tree With:">
+              <font>
+                  <Font size="22.0" />
+              </font>
+          </Text>
+          <ComboBox fx:id="statusInput" layoutX="140.0" layoutY="113.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="150.0" onAction="#statusChange" prefHeight="40.0" promptText="Choice Option" styleClass="Cheque__add-comboBox">
+
+              <padding>
+                  <Insets top="4.0" />
+              </padding>
+      </ComboBox>
+        <TextField fx:id="searchField" layoutX="811.0" layoutY="113.0" prefHeight="40.0" prefWidth="204.0" promptText="Cherche ..">
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></TextField>
+
+    </children>
+</Pane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" stylesheets="/eventback/add.css"  fx:controller="Controllers.event.CRUDsponsor">
+
+
+
+    <VBox alignment="CENTER" layoutX="113.0" layoutY="83.0" prefHeight="200" prefWidth="334.0" spacing="10">
+        <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="167.0" text="Ajout d'un Sponsor" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER">
+            <Label prefHeight="17.0" prefWidth="62.0" text="Nom:" />
+            <TextField fx:id="tfnom" style="-fx-background-color: #FFFFFF; -fx-background-radius: 100; -fx-border-color: #828282; -fx-border-width: 1px; -fx-border-radius: 30; -fx-padding: 5px;" />
+        </HBox>
+        <HBox alignment="CENTER">
+            <Label prefHeight="17.0" prefWidth="62.0" text="Email:" />
+            <TextField fx:id="emailField" style="-fx-background-color: #FFFFFF; -fx-background-radius: 100; -fx-border-color: #828282; -fx-border-width: 1px; -fx-border-radius: 30; -fx-padding: 5px;" />
+        </HBox>
+        <HBox alignment="CENTER">
+            <Label prefHeight="17.0" prefWidth="65.0" text="Numéro:" />
+            <TextField fx:id="numfield" style="-fx-background-color: #FFFFFF; -fx-background-radius: 100; -fx-border-color: #828282; -fx-border-width: 1px; -fx-border-radius: 30; -fx-padding: 5px;" />
+        </HBox>
+        <Button fx:id="btnenvoyer" prefHeight="25.0" prefWidth="85.0" text="Ajouter" onAction="#modifsponsor" style=" -fx-background-color: #90EE90; /* Light green */
+
+        -fx-padding: 10px 20px; -fx-background-radius: 30;" />
+    </VBox>
+</AnchorPane>

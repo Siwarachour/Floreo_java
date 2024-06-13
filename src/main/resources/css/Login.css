@@ -1,0 +1,51 @@
+.vbox-style {
+  -fx-background-color: rgba(128, 128, 128, 0.5); /* Gris transparent */
+  -fx-border-radius: 10px; /* Border radius de 10px */
+  -fx-padding: 20px; /* Ajouter un padding pour que le contenu ne soit pas collé aux bords */
+}
+
+.vbox-style:hover .text {
+  /* Animation pour les éléments de texte */
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1; /* Augmenter l'échelle verticale de 10% */
+}
+.vbox-style:hover.count-text{
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1;
+}
+
+.vbox-style:hover .text-field {
+  /* Animation pour les champs de texte */
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1; /* Augmenter l'échelle verticale de 10% */
+}
+.vbox-style:hover .click-text {
+  /* Animation pour les champs de texte */
+  -fx-scale-x: 1.2; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.2; /* Augmenter l'échelle verticale de 10% */
+}
+
+.vbox-style:hover .button {
+  /* Animation pour les boutons */
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1; /* Augmenter l'échelle verticale de 10% */
+}
+
+/* Style pour les champs de texte */
+.text-field {
+  -fx-border-radius: 325px; /* Border radius de 5px */
+}.hbox-style {
+   -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .7), rgba(136, 180, 78, .5));
+ }
+/* styles.css */
+.eye-icon {
+  -fx-background-image: url('/img/icons8-yeux-endormis-64.png');
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-padding: 5; /* Ajustez la marge intérieure pour que l'icône soit centrée */
+}
+
+.eye-icon:selected {
+  -fx-background-image: url('/img/icons8-yeux-endormis-64.png');
+}
+

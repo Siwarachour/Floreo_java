@@ -1,0 +1,14 @@
+.hbox-style {
+  -fx-background-color: linear-gradient(to bottom, rgba(136, 180, 78, .12), rgba(136, 180, 78, .7));
+}
+.hbox-style1 {
+  -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .12), rgba(136, 180, 78, .7));
+}
+.hbox-style2 {
+  -fx-background-color: linear-gradient(to bottom, rgba(136, 190, 80, .5), rgba(136, 180, 78, .1));
+  -fx-background-radius: 450px;
+  -fx-border-radius: 450px;
+  -fx-show-tick-labels: 100px;
+
+
+}

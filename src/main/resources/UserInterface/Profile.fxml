@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@../css/Profile.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserController.ProfileController">
+    <children>
+        <HBox prefHeight="122.0" prefWidth="1200.0" styleClass="hbox-style">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-field" text="Profile">
+                    <HBox.margin>
+                        <Insets left="200.0" top="50.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Bodoni MT" size="60.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+
+        <Pane layoutY="122.0" prefHeight="700.0" prefWidth="1200.0" styleClass="background-pane">
+            <children>
+                  <ImageView fx:id="imagefield" fitHeight="208.0" fitWidth="182.0" layoutX="592.0" layoutY="-62.0" />
+
+
+                <ImageView fitHeight="208.0" fitWidth="182.0" styleClass="circular-image" translateX="10.0" translateY="-120.0">
+                    <image>
+                        <Image url="@../img/logo.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#logoutclicked" styleClass="circular-image" translateX="950.0" translateY="-50.0">
+                    <image>
+                        <Image url="@../img/logout.png" />
+                    </image>
+                </ImageView>
+                <HBox layoutX="30.0" layoutY="91.0" prefHeight="485.0" prefWidth="562.0" spacing="20.0">
+                    <children>
+                        <VBox prefHeight="487.0" prefWidth="425.0">
+                            <children>
+                                <HBox prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                                    <children>
+                                        <Text fill="#fffefe" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Name :">
+                                            <font>
+                                                <Font name="Georgia Pro Cond Light Italic" size="30.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="nameField" strokeType="OUTSIDE" strokeWidth="0.0">
+                                            <font>
+                                                <Font name="Franklin Gothic Medium" size="25.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="15.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox layoutX="10.0" layoutY="54.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LastName :">
+                                            <font>
+                                                <Font name="Georgia Pro Cond Light Italic" size="30.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="lastnamefield" fill="#f5f4f4" strokeType="OUTSIDE" strokeWidth="0.0">
+                                            <font>
+                                                <Font name="Franklin Gothic Medium" size="25.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="10.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox layoutX="10.0" layoutY="154.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                                    <children>
+                                        <Text fill="#f5f4f4" strokeType="OUTSIDE" strokeWidth="0.0" text="Role :">
+                                            <font>
+                                                <Font name="Georgia Pro Cond Light Italic" size="30.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="roleField" strokeType="OUTSIDE" strokeWidth="0.0">
+                                            <font>
+                                                <Font name="Franklin Gothic Medium" size="25.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="10.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox layoutX="10.0" layoutY="260.0" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Naissance :">
+                                            <font>
+                                                <Font name="Georgia Pro Cond Light Italic" size="30.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="datenaissancefield" fill="#fcfcfc" strokeType="OUTSIDE" strokeWidth="0.0">
+                                            <font>
+                                                <Font name="Franklin Gothic Medium" size="25.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="10.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                                    <children>
+                                        <Text fill="#fcfafa" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone :">
+                                            <font>
+                                                <Font name="Georgia Pro Cond Light Italic" size="30.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="numberfield" strokeType="OUTSIDE" strokeWidth="0.0">
+                                            <font>
+                                                <Font name="Franklin Gothic Medium" size="25.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="10.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+                                            <font>
+                                                <Font name="Georgia Pro Cond Light Italic" size="30.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="emailfield" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                                            <font>
+                                                <Font name="Franklin Gothic Medium" size="25.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets top="10.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <ImageView fitHeight="358.0" fitWidth="463.0" layoutX="700.0" layoutY="291.0" BorderPane.alignment="CENTER">
+                    <image>
+                        <Image url="@../img/haze-caring-for-the-environment-1.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

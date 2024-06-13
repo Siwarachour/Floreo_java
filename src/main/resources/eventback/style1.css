@@ -1,0 +1,10 @@
+.bg {
+  -fx-background-color: linear-gradient(to bottom, rgba(136, 180, 78, .7), #2f611f);
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: cover;
+}
+.bg1 {
+  -fx-background-color: rgba(136, 180, 78, .7); /* Utiliser la même couleur pour les deux extrémités */
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: cover;
+}

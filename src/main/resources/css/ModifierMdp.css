@@ -1,0 +1,20 @@
+.hbox-style {
+  -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .7), rgba(136, 180, 78, .5));
+}
+
+
+.img-style:hover .ImageView {
+  /* Animation pour les éléments de texte */
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1; /* Augmenter l'échelle verticale de 10% */
+}
+/* Home.css */
+
+.root {
+  -fx-background-color: #f0f0f0;
+}
+
+#mainPane {
+  -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 2, 2);
+}
+

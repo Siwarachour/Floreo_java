@@ -1,0 +1,146 @@
+.root {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-family: "Arial";
+}
+
+/* Title Text Style */
+.DemandeCard__title {
+    -fx-fill: black;
+    -fx-font: 36px "Arial Black";
+    -fx-padding: 0 0 0 100;
+}
+
+/* Button Styles */
+ #trie1, #trie {
+    -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, 0.6), #2f611f);
+    -fx-text-fill: white;
+    -fx-font: 18px "Arial Bold";
+    -fx-background-radius: 20;
+}
+
+#trie1:hover, #trie:hover {
+    -fx-background-color: #3a7f2b; /* Adjusted hover color */
+}
+
+/* Text Field Style */
+
+
+/* Label Style */
+Label {
+    -fx-text-fill: black;
+    -fx-font: 18px "Arial";
+}
+
+/* ScrollPane Style */
+.user_listScrollPane {
+    -fx-background-color: rgba(128, 128, 128, 0.1);
+    -fx-border-radius: 10px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(136, 180, 78, 0.6), 10, 0.1, 0, 0);
+}
+
+/* HBox Style */
+.nav {
+
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 1);
+}
+/* Search Input Style */
+#searchInput {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: #131314;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-background-radius: 30;
+}
+
+.list-cell {
+    -fx-text-fill: #fffdfa;
+    -fx-font-family: "Corbel Bold Italic";
+    -fx-font-size: 20px;
+
+    -fx-height: 30px;
+    -fx-background-color: rgba(128, 128, 128, 0.5); /* Light grey background */
+}
+
+.list-cell:odd {
+    -fx-background-color: rgba(128, 128, 128, 0.5);
+}
+
+.list-cell:even {
+    -fx-background-color: rgba(128, 128, 128, 0.5);
+}
+
+.list-cell:filled:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-background-color: rgba(136, 180, 78, 0.5); /* Light green hover */
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .6), #2f611f);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-text-fill: white;
+}
+vbox-style {
+    -fx-background-color: rgba(128, 128, 128, 0.1);
+    -fx-border-radius: 10px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(136, 180, 78, .6), 10, 0.1, 0, 0);
+}
+
+/* Custom styles for your application */
+.custom-button {
+    -fx-background-color: #2f611f;
+    -fx-text-fill: white;
+    -fx-border-color: #131314;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.custom-button:hover {
+    -fx-background-color: #131314;
+    -fx-text-fill: #2f611f;
+}
+
+.custom-text-field {
+    -fx-background-color: #100f0f;
+    -fx-text-fill: #fffdfa;
+    -fx-border-color: #131314;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.custom-text-field:focused {
+    -fx-border-color: #2f611f;
+}
+.button {
+    -fx-background-color: #2f611f; /* Green background for buttons */
+    -fx-text-fill: white; /* White text for buttons */
+}
+
+.button:hover {
+    -fx-background-color: #131314; /* Dark grey background on hover */
+}
+
+.text-field {
+    -fx-background-color: white; /* White background for text fields */
+    -fx-border-color: #131314; /* Border color */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+.text-field:focused {
+    -fx-border-color: #2f611f; /* Green border on focus */
+}
+/* combo-size.css */
+.combo-box {
+    -fx-pref-width: 200;
+}
+
+.combo-box-popup > .list-view {
+    -fx-pref-width: 200;
+}

@@ -1,0 +1,48 @@
+.bg {
+  -fx-background-color: linear-gradient(to bottom, rgba(136, 180, 78, .7), #2f611f);
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: cover;
+}
+.bg1 {
+  -fx-background-color: rgba(136, 180, 78, .7); /* Utiliser la même couleur pour les deux extrémités */
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: cover;
+}
+.text {
+  -fx-font-size: 14px;
+  -fx-font-family: Arial, sans-serif;
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+  -fx-cursor: hand; /* Change le curseur en main lorsque survolé */
+  -fx-transition-duration: 0.5s; /* Durée de l'animation */
+   /* Décale le texte de 100 pixels vers la droite */
+}
+
+
+
+
+.nav-links {
+  -fx-background-color: transparent; /* Couleur de fond transparente par défaut */
+}
+
+/* Définition de la couleur de fond grise transparente au survol */
+.nav-links:hover {
+  -fx-background-color: rgba(128, 128, 128, 0.5); /* Couleur de fond gris transparente au survol */
+}
+
+
+
+#userImage {
+  -fx-margin-left: 100px; /* Ajoute une marge de 10 pixels autour de l'image avec l'identifiant 'userImage' */
+}
+/* CSS pour l'effet de survol (hover) sur la HBox */
+/* CSS pour l'animation au survol de la HBox */
+.nav-links:hover .image, .nav-links:hover .text {
+  -fx-scale-x: 1.2; /* Zoom sur l'axe horizontal */
+  -fx-scale-y: 1.2; /* Zoom sur l'axe vertical */
+  -fx-transition-duration: 0.5s; /* Durée de l'animation */
+}
+
+
+
+

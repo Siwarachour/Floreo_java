@@ -1,0 +1,16 @@
+.hbox-style {
+  -fx-background-color: linear-gradient(to bottom, rgba(136, 180, 78, .5), #2f611f);
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: cover;
+}
+.vbox-style{
+  -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .3), #2f611f);
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: cover;
+}
+
+.circular-image:hover {
+  /* Animation pour les éléments de texte */
+  -fx-scale-x: 1.1; /* Augmenter l'échelle horizontale de 10% */
+  -fx-scale-y: 1.1; /* Augmenter l'échelle verticale de 10% */
+}

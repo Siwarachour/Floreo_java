@@ -1,0 +1,125 @@
+
+.list-view .list-cell:odd,
+.list-view .list-cell:even {
+    -fx-background-color: rgba(136, 180, 78, 0.1); /* Light green background */
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: rgba(136, 180, 78, 0.3); /* Light green background on hover */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, 0.8), #2f611f); /* Gradient background for selected items */
+    -fx-text-fill: white; /* White text for selected items */
+}
+
+.nav {
+    -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, 0.6), #2f611f); /* Gradient background for the navigation bar */
+}
+
+.user_listScrollPane {
+    -fx-background-color: transparent; /* Transparent background for scroll pane */
+    -fx-background-insets: 0; /* Remove background insets */
+    -fx-padding: 10px; /* Add padding */
+}
+
+
+
+/* Button Styles */
+#btnajouter, #trie1, #trie {
+    -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, 0.6), #2f611f);
+    -fx-text-fill: white;
+    -fx-font: 18px "Arial Bold";
+    -fx-background-radius: 20;
+}
+
+#btnajouter:hover, #trie1:hover, #trie:hover {
+    -fx-background-color: #3a7f2b; /* Adjusted hover color */
+}
+
+.custom-button {
+     -fx-background-color: #2f611f;
+     -fx-text-fill: white;
+     -fx-border-color: #131314;
+     -fx-border-radius: 5px;
+     -fx-background-radius: 5px;
+ }
+
+ .custom-button:hover {
+     -fx-background-color: #131314;
+     -fx-text-fill: #2f611f;
+ }
+
+ .custom-text-field {
+     -fx-background-color: #100f0f;
+     -fx-text-fill: #fffdfa;
+     -fx-border-color: #131314;
+     -fx-border-radius: 5px;
+     -fx-background-radius: 5px;
+ }
+
+ .custom-text-field:focused {
+     -fx-border-color: #2f611f;
+ }
+ .button {
+     -fx-background-color: #2f611f; /* Green background for buttons */
+     -fx-text-fill: white; /* White text for buttons */
+ }
+
+ .button:hover {
+     -fx-background-color: #131314; /* Dark grey background on hover */
+ }
+
+
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for text fields */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: "Arial"; /* Font family */
+}
+
+.label {
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-family: "Arial"; /* Font family */
+    -fx-text-fill: #2f611f; /* Dark green text color */
+}
+/* Add these styles to your existing CSS file */
+
+.list-cell {
+    -fx-font-family: "Corbel Bold Italic"; /* Same font family */
+    -fx-font-size: 16px; /* Adjusted font size */
+    -fx-font-weight: normal; /* Use normal font weight */
+    -fx-text-fill: black; /* Change the text color to black for better visibility */
+
+    -fx-height: 24px; /* Adjusted height */
+    -fx-background-color: rgba(128, 128, 128, 0.5); /* Light grey background */
+}
+
+.list-cell:odd {
+    -fx-background-color: rgba(128, 128, 128, 0.5);
+}
+
+.list-cell:even {
+    -fx-background-color: rgba(128, 128, 128, 0.5);
+}
+
+.list-cell:filled:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-background-color: rgba(136, 180, 78, 0.5); /* Light green hover */
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(to top, rgba(136, 180, 78, .6), #2f611f);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-text-fill: white;
+}
+
+/* Customize the text inside the list cell */
+.list-cell .label {
+    -fx-font-family: "Corbel Bold Italic"; /* Same font family */
+    -fx-font-size: 18px;
+    -fx-font-weight: bold; /* Make the font bold */
+    -fx-text-fill: black; /* Change the text color to black for better visibility */
+}

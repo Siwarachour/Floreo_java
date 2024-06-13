@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controllers.event.CRUDsponsor"
+            prefHeight="400.0" prefWidth="600.0"  stylesheets="@/eventback/stylesponadd.css">
+
+    <!-- AddSponsorForm.fxml -->
+    <VBox alignment="CENTER" layoutX="113.0" layoutY="83.0" prefHeight="200" prefWidth="334.0" spacing="10">
+
+        <Label id="titleLabel" contentDisplay="CENTER" prefHeight="27.0" prefWidth="167.0" text="Ajout d'un Sponsor" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+
+
+
+
+        <HBox alignment="CENTER">
+            <Label id="nameLabel" prefHeight="17.0" prefWidth="62.0" text="Nom:" />
+            <TextField fx:id="tfnom" />
+        </HBox>
+        <HBox alignment="CENTER">
+            <Label id="emailLabel" prefHeight="17.0" prefWidth="62.0" text="Email:" />
+            <TextField fx:id="emailField" />
+        </HBox>
+        <HBox alignment="CENTER">
+            <Label id="numberLabel" prefHeight="17.0" prefWidth="65.0" text="Numéro:" />
+            <TextField fx:id="numfield" />
+        </HBox>
+        <Button fx:id="btnenvoyer" prefHeight="25.0" prefWidth="85.0" text="Ajouter" onAction="#ajoutersponsor"  />
+    </VBox>
+</AnchorPane>

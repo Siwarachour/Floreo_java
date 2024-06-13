@@ -1,0 +1,58 @@
+#AnchorPane {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Style for Pane inside ScrollPane */
+Pane {
+    -fx-background-color: white;
+    -fx-border-color: #131314;
+    -fx-border-radius: 10px;
+}
+
+/* Style for Labels */
+Label {
+    -fx-font-family: "Corbel Bold Italic";
+    -fx-font-size: 18px;
+    -fx-text-fill: black;
+}
+
+/* Style for TextFields */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #131314;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* Style for ComboBox */
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #131314;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* Style for DatePicker */
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #131314;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* Style for Buttons */
+.button {
+    -fx-background-radius: 10px;
+    -fx-font-size: 20px;
+}
+
+/* Style for primary Button */
+.primary-button {
+    -fx-background-color: #2f611f;
+    -fx-text-fill: white;
+}
+
+/* Hover effect for Buttons */
+.button:hover {
+    -fx-background-color: #3f812f;
+}

@@ -1,0 +1,28 @@
+.chart-container {
+    -fx-background-color: #90EE90; /* Very light green */
+    -fx-padding: 10px;
+}
+
+.chart-container.pie-chart {
+    -fx-text-fill: #000000; /* Text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-weight: bold; /* Bold font weight */
+}
+
+/* Optional: Change the background color of the pie chart */
+.pie-chart.chart-legend-item {
+    -fx-background-color: #008000; /* Dark green for legend */
+}
+
+.pie-chart.chart-series-node {
+    -fx-background-color: #00FF00; /* Light green for pie slices */
+}
+.chart-container {
+    -fx-background-color: var(--background-color, #90EE90); /* Default to very light green */
+    -fx-padding: 10px;
+}
+
+
+
+
+

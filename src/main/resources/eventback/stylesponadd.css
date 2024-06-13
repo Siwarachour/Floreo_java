@@ -1,0 +1,47 @@
+/* Root Pane Styles */
+#AnchorPane {
+    -fx-background-color: white;
+    -fx-border-color: #131314;
+    -fx-border-radius: 30;
+}
+
+/* Title Label Style */
+#titleLabel {
+    -fx-text-fill: black;
+    -fx-font: 18px "Arial";
+    -fx-padding: 0 0 0 100;
+}
+
+/* Text Fields and Labels */
+#nameLabel, #emailLabel, #numberLabel {
+    -fx-text-fill: black;
+    -fx-font: 18px "Arial";
+}
+
+#tfnom, #emailField, #numfield {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: #131314;
+    -fx-border-radius: 30;
+    -fx-padding: 5px;
+}
+
+/* Submit Button Style */
+#btnenvoyer {
+    -fx-background-color: #2f611f;
+    -fx-text-fill: white;
+    -fx-border-color: #131314;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+}
+
+#btnenvoyer:hover {
+    -fx-background-color: #131314;
+    -fx-text-fill: #2f611f;
+}
+
+/* General Styles */
+.root {
+    -fx-font-family: "Arial";
+    -fx-text-fill: black;
+}
